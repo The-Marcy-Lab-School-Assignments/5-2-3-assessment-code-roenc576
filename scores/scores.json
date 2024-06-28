@@ -25,11 +25,11 @@
       "HaMa/BeToTe15": 1
     },
     "Inheritance & Polymorphism Tests": {
-      "In&PoTe1": 0,
-      "In&PoTe2": 0,
-      "In&PoTe3": 0,
-      "In&PoTe4": 0,
-      "In&PoTe5": 0,
+      "In&PoTe1": 1,
+      "In&PoTe2": 1,
+      "In&PoTe3": 1,
+      "In&PoTe4": 1,
+      "In&PoTe5": 1,
       "In&PoTe6": 0,
       "In&PoTe7": 0,
       "In&PoTe8": 0,
@@ -118,8 +118,8 @@
   },
   "humanReadable": {
     "Factory Function Tests": "0/5",
-    "finalTestScore": "FINAL SCORE: 15/35",
+    "finalTestScore": "FINAL SCORE: 20/35",
     "Has Many / Belongs To Tests": "15/15",
-    "Inheritance & Polymorphism Tests": "0/15"
+    "Inheritance & Polymorphism Tests": "5/15"
   }
 }
