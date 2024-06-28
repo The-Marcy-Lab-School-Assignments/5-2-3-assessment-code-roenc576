@@ -5,8 +5,13 @@ class Phone {
     this.phoneNumber = phoneNumber;
   }
 
-  makeCall() {
-
+  makeCall(contactName) {
+    const contactIsFound = this.contacts.find(contact => contact.name === contactName);
+    const parsedNum = +contactName;
+    const isValidNumber = contactName.length === 10 && typeof parsedNum === 'number';
+    if (contactIsFound || isValidNumber) {
+      return `Calling ${contactName}...`;
+    }
   }
 
   addContact(contact) {
@@ -20,8 +25,11 @@ class Phone {
     return `${contact.name} added.`
   }
 
-  removeContact() {
-
+  removeContact(contactName) {
+    const contactIndex = this.contacts.findIndex(contact => contact.name === contactName);
+    if (contactIndex === -1) return `Contact not found.`;
+    this.contacts.splice(contactIndex, 1);
+    return `${contactName} removed.`;
   }
 
 }
