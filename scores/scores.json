@@ -8,10 +8,10 @@
       "FaFuTe5": 0
     },
     "Has Many / Belongs To Tests": {
-      "HaMa/BeToTe1": 0,
-      "HaMa/BeToTe2": 0,
-      "HaMa/BeToTe3": 0,
-      "HaMa/BeToTe4": 0,
+      "HaMa/BeToTe1": 1,
+      "HaMa/BeToTe2": 1,
+      "HaMa/BeToTe3": 1,
+      "HaMa/BeToTe4": 1,
       "HaMa/BeToTe5": 0,
       "HaMa/BeToTe6": 0,
       "HaMa/BeToTe7": 0,
@@ -118,8 +118,8 @@
   },
   "humanReadable": {
     "Factory Function Tests": "0/5",
-    "finalTestScore": "FINAL SCORE: 0/35",
-    "Has Many / Belongs To Tests": "0/15",
+    "finalTestScore": "FINAL SCORE: 4/35",
+    "Has Many / Belongs To Tests": "4/15",
     "Inheritance & Polymorphism Tests": "0/15"
   }
 }
