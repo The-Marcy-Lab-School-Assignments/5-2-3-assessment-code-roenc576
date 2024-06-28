@@ -1,11 +1,11 @@
 {
   "testScores": {
     "Factory Function Tests": {
-      "FaFuTe1": 0,
-      "FaFuTe2": 0,
-      "FaFuTe3": 0,
-      "FaFuTe4": 0,
-      "FaFuTe5": 0
+      "FaFuTe1": 1,
+      "FaFuTe2": 1,
+      "FaFuTe3": 1,
+      "FaFuTe4": 1,
+      "FaFuTe5": 1
     },
     "Has Many / Belongs To Tests": {
       "HaMa/BeToTe1": 1,
@@ -117,8 +117,8 @@
     "Inheritance & Polymorphism Tests AppleIPhone - sendIMessage(): returns the right message when messaging iPhones vs. others": "In&PoTe15"
   },
   "humanReadable": {
-    "Factory Function Tests": "0/5",
-    "finalTestScore": "FINAL SCORE: 29/35",
+    "Factory Function Tests": "5/5",
+    "finalTestScore": "FINAL SCORE: 34/35",
     "Has Many / Belongs To Tests": "15/15",
     "Inheritance & Polymorphism Tests": "14/15"
   }

@@ -1,15 +1,18 @@
 class Phone {
-  contacts = [];
 
   constructor(phoneNumber) {
     this.phoneNumber = phoneNumber;
+    this.contacts = [];
   }
 
   makeCall(contactName) {
-    const contactIsFound = this.contacts.find(contact => contact.name === contactName);
+    const contactIsFound = this.contacts.findIndex(contact => contact.name === contactName);
     const parsedNum = +contactName;
     const isValidNumber = contactName.length === 10 && typeof parsedNum === 'number';
-    if (contactIsFound || isValidNumber) {
+
+    if (contactIsFound !== -1) {
+      return `Calling ${this.contacts[contactIsFound].name}...`;
+    } else if (isValidNumber) {
       return `Calling ${contactName}...`;
     } else {
       return `Invalid`;
