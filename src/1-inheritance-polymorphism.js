@@ -11,6 +11,8 @@ class Phone {
     const isValidNumber = contactName.length === 10 && typeof parsedNum === 'number';
     if (contactIsFound || isValidNumber) {
       return `Calling ${contactName}...`;
+    } else {
+      return `Invalid`;
     }
   }
 
@@ -34,8 +36,19 @@ class Phone {
 
 }
 
-class AppleIPhone {
+class AppleIPhone extends Phone {
+  constructor(phoneNumber, model) {
+    super(phoneNumber);
+    this.model = model;
+  }
 
+  sendIMessage(phone, message) {
+    if (phone instanceof AppleIPhone) {
+      return `Message: ${message} - sent from ${this.model}`;
+    } else {
+      return `Message could not be sent.`;
+    }
+  }
 }
 
 const myPhone = new Phone('3448731233');
